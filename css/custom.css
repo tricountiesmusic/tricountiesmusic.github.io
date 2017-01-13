@@ -1,3 +1,54 @@
-div {
-    background-color: 'blue';
+label {
+  display: block;
+}
+
+input {
+  margin: 0 20px 10px 0;
+  outline: none;
+  border: 1px solid lightgray;
+}
+
+input[type=text], input[type=tel], input[type=email] {
+  width: 200px;
+}
+
+input[type=number] {
+  width: 100px;
+}
+
+label {
+  font-weight: normal;
+  margin: 0;
+}
+
+#division label, #grade label {
+  display: inline;
+}
+
+.repertoire div, .address div {
+  display: inline-block;
+}
+
+@media all 
+  and (max-width: 768px) {
+    body {
+      background-color: purple; 
+    }
+}
+
+/* Small Phones */
+@media screen
+  and (max-device-width: 736px) {
+    body {
+      background-color: red;
+    }
+}
+
+/* Tablets */
+@media screen
+  and (min-device-width: 736px)
+  and (max-device-width: 1024px) {
+    body {
+      background-color: orange;
+    }
 }
