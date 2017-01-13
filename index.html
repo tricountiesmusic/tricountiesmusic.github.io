@@ -25,7 +25,7 @@
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes<span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="themes">
                 <li><a href="../default/">Default</a></li>
                 <li class="divider"></li>
@@ -69,7 +69,6 @@
               </ul>
             </li>
           </ul>
-
           <ul class="nav navbar-nav navbar-right">
             <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
             <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
@@ -82,17 +81,162 @@
       <div class="page-header" id="banner">
         <div class="row">
           <div class="col-lg-10">
-          <h1>HELLO?</h1></div>
         </div> 
       </div>
       <div class="row">
+        <div class="col-lg-offset-1 col-lg-8">
+          <h1>Tri-Counties Music Competition 2017</h1>
+          <h2>Application Form</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-1 col-lg-8">
         <form action="https://formspree.io/umgauper@gmail.com" method="POST">
-            <div>
-              <label>Name:</label>
-              <input type="text" name="First Name" required/>
+            <h3>Contact Information</h3>
+            <h4>Address</h4>
+            <div class="address">
+              <div>
+                <label>Street</label>
+                <input type="text" name="Street" required/>
+              </div>            
+              <div>
+                <label>City</label>
+                <input type="text" name="City" required/>
+              </div>
+              <div>
+                <label>Zipcode</label>
+                <input type="number" name="Zip" required/>
+              </div> 
             </div>
-              <input type="submit" value="Send"/>
+            <div>
+              <label>Email</label>
+              <input type="email" name="Email" required/>
+            </div>
+            <div>
+              <label>Phone</label>
+              <input type="tel" name="Phone" required/>
+            </div>
+            <h3>Performer Information</h3>
+            <div class="name">
+              <div>
+                <label>First Name</label>
+                <input type="text" name="Performer First Name" required/>
+              </div>
+              <div>
+                <label>Last Name</label>
+                <input type="text" name="Performer Last Name" required/>
+              </div>
+            </div>
+            <div>
+              <label>Age</label>
+              <input type="number" name="Age" min="5" max="19" required/>
+            </div>
+            <div>
+              <label>School</label>
+              <input type="text" name="School" required/>
+            </div>
+            <h4>Division</h4>
+            <div id="division">
+              <label>Piano</label>
+              <input type="radio" name="Division" value="Piano" required/>
+              <label>Voice</label>
+              <input type="radio" name="Division" value="Voice" required/>
+              <label>Instrumental</label>
+              <input type="radio" name="Division" value="Instrumental" required/>
+              <label>Instrument</label>
+              <input type="text" name="Instrument" />
+            </div>
+            <h4>Grade</h4>
+            <div id="grade">
+              <label>1st-3rd</label>
+              <input type="radio" name="Grade" value="1st-3rd" required/>
+              <label>4th-6th</label>
+              <input type="radio" name="Grade" value="4th-6th" required/>
+              <label>7th-9th</label>
+              <input type="radio" name="Grade" value="7th-9th" required/>
+              <label>10th-12th</label>
+              <input type="radio" name="Grade" value="10th-12th" />
+            </div>
+            <h4>Repertoire</h4>
+            <div class="repertoire">
+              <div>
+                <label>Title</label>
+                <input type="text" name="Title1" required/>
+              </div>
+              <div>
+                <label>Composer</label>
+                <input type="text" name="Composer1" required/>
+              </div> 
+              <div>
+                <label>Performance Time (in minutes)</label>
+                <input type="number" name="Performance Time1" required/>
+              </div>
+            </div>
+            <div class="repertoire">
+              <div>
+                <label>Title</label>
+                <input type="text" name="Title2" required/>
+              </div>
+              <div>
+                <label>Composer</label>
+                <input type="text" name="Composer2" required/>
+              </div> 
+              <div>
+                <label>Performance Time (in minutes)</label>
+                <input type="number" name="Performance Time2" required/>
+              </div>            
+            </div>
+            <div class="repertoire">
+              <div>
+                <label>Title</label>
+                <input type="text" name="Title3" required/>
+              </div>
+              <div>
+                <label>Composer</label>
+                <input type="text" name="Composer3" required/>
+              </div> 
+              <div>
+                <label>Performance Time (in minutes)</label>
+                <input type="number" name="Performance Time3" required/>
+              </div>            
+            </div>
+            <h3>Teacher Information</h3>
+            <div class="name"> 
+              <div>
+                <label>First Name</label>
+                <input type="text" name="Teacher First Name" required/>
+              </div>
+              <div>
+                <label>Last Name</label>
+                <input type="text" name="Teacher First Name" required/>
+              </div>
+            </div>
+            <h4>Address</h4>
+            <div class="address">
+              <div>
+                <label>Street</label>
+                <input type="text" name="Teacher Street" required/>
+              </div>
+              <div>
+                <label>City</label>
+                <input type="text" name="Teacher City" required/>
+              </div>
+              <div>
+                <label>Zip</label>
+                <input type="number" name="Teacher Zip" maxlength="5" required/>
+              </div>
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" name="Teacher Email" required/>
+            </div>
+            <div>
+              <label>Phone</label>
+              <input type="tel" name="Teacher Phone" required/>
+            </div>
+            <input type="submit" value="Send"/>
         </form>
+        </div><!--end col-->
       </div>
     </div><!--end main-->
   </body>
