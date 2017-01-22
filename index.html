@@ -11,11 +11,12 @@
   </head>
   <body>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/custom_script.js"></script>
     <!-- Navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="../" class="navbar-brand">Bootswatch</a>
+          <a href="#" class="navbar-brand">Tri Counties Music Competition</a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -24,220 +25,58 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes<span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="themes">
-                <li><a href="../default/">Default</a></li>
-                <li class="divider"></li>
-                <li><a href="../cerulean/">Cerulean</a></li>
-                <li><a href="../cosmo/">Cosmo</a></li>
-                <li><a href="../cyborg/">Cyborg</a></li>
-                <li><a href="../darkly/">Darkly</a></li>
-                <li><a href="../flatly/">Flatly</a></li>
-                <li><a href="../journal/">Journal</a></li>
-                <li><a href="../lumen/">Lumen</a></li>
-                <li><a href="../paper/">Paper</a></li>
-                <li><a href="../readable/">Readable</a></li>
-                <li><a href="../sandstone/">Sandstone</a></li>
-                <li><a href="../simplex/">Simplex</a></li>
-                <li><a href="../slate/">Slate</a></li>
-                <li><a href="../spacelab/">Spacelab</a></li>
-                <li><a href="../superhero/">Superhero</a></li>
-                <li><a href="../united/">United</a></li>
-                <li><a href="../yeti/">Yeti</a></li>
-              </ul>
+            <li>
+              <a href="./application.html">Application</a>
+            </li>
+                        <li>
+              <a href="./rules.html">Rules</a>
             </li>
             <li>
-              <a href="../help/">Help</a>
-            </li>
-            <li>
-              <a href="http://news.bootswatch.com">Blog</a>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Sandstone <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="download">
-                <li><a href="http://jsfiddle.net/bootswatch/m0nv7a0o/">Open Sandbox</a></li>
-                <li class="divider"></li>
-                <li><a href="./bootstrap.min.css">bootstrap.min.css</a></li>
-                <li><a href="./bootstrap.css">bootstrap.css</a></li>
-                <li class="divider"></li>
-                <li><a href="./variables.less">variables.less</a></li>
-                <li><a href="./bootswatch.less">bootswatch.less</a></li>
-                <li class="divider"></li>
-                <li><a href="./_variables.scss">_variables.scss</a></li>
-                <li><a href="./_bootswatch.scss">_bootswatch.scss</a></li>
-              </ul>
+              <a href="./contact.html">Contact</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
-            <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
           </ul>
         </div>
       </div>
     </div>
   <!--  End Navbar -->
-    <div id="main" class="container">
-      <div class="page-header" id="banner">
-        <div class="row">
-          <div class="col-lg-10">
-        </div> 
+    <div class="main" class="container">
+      <div class="row" id="banner">
       </div>
       <div class="row">
-        <div class="col-lg-offset-1 col-lg-8">
-          <h1>Tri-Counties Music Competition 2017</h1>
-          <h2>Application Form</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-offset-1 col-lg-8">
-        <form action="https://formspree.io/umgauper@gmail.com" method="POST">
-            <h3>Contact Information</h3>
-            <h4>Address</h4>
-            <div class="address">
-              <div>
-                <label>Street</label>
-                <input type="text" name="Street" required/>
-              </div>            
-              <div>
-                <label>City</label>
-                <input type="text" name="City" required/>
-              </div>
-              <div>
-                <label>Zipcode</label>
-                <input type="number" name="Zip" required/>
-              </div> 
-            </div>
-            <div>
-              <label>Email</label>
-              <input type="email" name="Email" required/>
-            </div>
-            <div>
-              <label>Phone</label>
-              <input type="tel" name="Phone" required/>
-            </div>
-            <h3>Performer Information</h3>
-            <div class="name">
-              <div>
-                <label>First Name</label>
-                <input type="text" name="Performer First Name" required/>
-              </div>
-              <div>
-                <label>Last Name</label>
-                <input type="text" name="Performer Last Name" required/>
-              </div>
-            </div>
-            <div>
-              <label>Age</label>
-              <input type="number" name="Age" min="5" max="19" required/>
-            </div>
-            <div>
-              <label>School</label>
-              <input type="text" name="School" required/>
-            </div>
-            <h4>Division</h4>
-            <div id="division">
-              <label>Piano</label>
-              <input type="radio" name="Division" value="Piano" required/>
-              <label>Voice</label>
-              <input type="radio" name="Division" value="Voice" required/>
-              <label>Instrumental</label>
-              <input type="radio" name="Division" value="Instrumental" required/>
-              <label>Instrument</label>
-              <input type="text" name="Instrument" />
-            </div>
-            <h4>Grade</h4>
-            <div id="grade">
-              <label>1st-3rd</label>
-              <input type="radio" name="Grade" value="1st-3rd" required/>
-              <label>4th-6th</label>
-              <input type="radio" name="Grade" value="4th-6th" required/>
-              <label>7th-9th</label>
-              <input type="radio" name="Grade" value="7th-9th" required/>
-              <label>10th-12th</label>
-              <input type="radio" name="Grade" value="10th-12th" />
-            </div>
-            <h4>Repertoire</h4>
-            <div class="repertoire">
-              <div>
-                <label>Title</label>
-                <input type="text" name="Title1" required/>
-              </div>
-              <div>
-                <label>Composer</label>
-                <input type="text" name="Composer1" required/>
-              </div> 
-              <div>
-                <label>Performance Time (in minutes)</label>
-                <input type="number" name="Performance Time1" required/>
-              </div>
-            </div>
-            <div class="repertoire">
-              <div>
-                <label>Title</label>
-                <input type="text" name="Title2" required/>
-              </div>
-              <div>
-                <label>Composer</label>
-                <input type="text" name="Composer2" required/>
-              </div> 
-              <div>
-                <label>Performance Time (in minutes)</label>
-                <input type="number" name="Performance Time2" required/>
-              </div>            
-            </div>
-            <div class="repertoire">
-              <div>
-                <label>Title</label>
-                <input type="text" name="Title3" required/>
-              </div>
-              <div>
-                <label>Composer</label>
-                <input type="text" name="Composer3" required/>
-              </div> 
-              <div>
-                <label>Performance Time (in minutes)</label>
-                <input type="number" name="Performance Time3" required/>
-              </div>            
-            </div>
-            <h3>Teacher Information</h3>
-            <div class="name"> 
-              <div>
-                <label>First Name</label>
-                <input type="text" name="Teacher First Name" required/>
-              </div>
-              <div>
-                <label>Last Name</label>
-                <input type="text" name="Teacher First Name" required/>
-              </div>
-            </div>
-            <h4>Address</h4>
-            <div class="address">
-              <div>
-                <label>Street</label>
-                <input type="text" name="Teacher Street" required/>
-              </div>
-              <div>
-                <label>City</label>
-                <input type="text" name="Teacher City" required/>
-              </div>
-              <div>
-                <label>Zip</label>
-                <input type="number" name="Teacher Zip" maxlength="5" required/>
-              </div>
-            </div>
-            <div>
-              <label>Email</label>
-              <input type="email" name="Teacher Email" required/>
-            </div>
-            <div>
-              <label>Phone</label>
-              <input type="tel" name="Teacher Phone" required/>
-            </div>
-            <input type="submit" value="Send"/>
-        </form>
+        <div class="col-lg-offset-1 col-lg-10">
+         <img class="pull-right" src="./images/violin.jpg"/>
+         <h1><b>Tri Counties Music</b></h1>
+         <h2>Annual Competition 2017</h2>
+         <i><h2>Saturday, March 25th, 2017</h2>
+         <h2>St Andrew Presbyterian Church,</h2> 
+         <h2>1390 Franklin Road,<h2>
+         <h2>Yuba City 95993</h2></i>
+         <hr></hr>
         </div><!--end col-->
-      </div>
+      </div><!--end row-->
+      <div class="row">
+         <div class="letter col-lg-offset-1 col-lg-10">
+         <p>Dear Music Students, Music Teachers, School Principals, and Superintendents,</p>
+         <p>We are proud to announce the 21st Annual Tri-Counties Music Competition sponsored by the Yuba City Noon Kiwanis Club.  This year the competition will be held on <b>Saturday, March 25th, 2017</b> at the <b>St Andrew Presbyterian Church</b> in Yuba City, and is open to students from 1st grade through 12th who are studying classical music.</p>
+        </div><!--end col-->
+      </div><!--end row-->
+      <div class="row">
+         <div class="letter col-lg-offset-1 col-lg-10">
+         <p>As you know, it is important to support and encourage music study among young people. Performing can give students lifelong joy and fulfillment and provide a wide choice of career specialties.  It is for the purpose of discovering, encouraging and developing talent that the Tri-Counties Music Competition was founded and organized in 1997 by Judy Wales, a former music teacher and active musician in this area.</p>
+         <p>The music scholarships for this competition are made available through the support of the Yuba City Noon Kiwanis club along with other individuals and businesses.  The Kiwanis Club will be hosting the competition, award presentation, and the Winners Concert.
+Kiwanis members are proud of this competition and its continuing support of the music students in our communities.</p>
+         <p>On this website are <a href="./rules.html">Competition Rules</a>, and an <a href="./application.html">Application Form</a>.  Please read the competition rules carefully.</p>
+         <p>Sincerely,</p>
+         <p><i>Maree Gauper</i></p>
+         <p>Chairperson</p>
+         <p>Tri-Counties Music Competition</p>
+         </div><!--end col-->
+         <hr></hr>
+        </div><!--end col-->
+      </div><!--end row-->
     </div><!--end main-->
+    <hr></hr>
   </body>
 </html>

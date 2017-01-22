@@ -1,3 +1,8 @@
+.row {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
 label {
   display: block;
 }
@@ -25,8 +30,41 @@ label {
   display: inline;
 }
 
-.repertoire div, .address div {
+#division input {
+  display: inline;
+}
+
+.repertoire div, .address div, .name div {
   display: inline-block;
+}
+
+#application-body {
+  margin: 100px 0 50px 0 !important;
+}
+
+img {
+  width: 50%;
+  height: 2%;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  margin: 0 0 2% 2%;
+}
+
+#banner {
+  height: 100px;
+}
+
+.letter p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.letter {
+
+}
+
+input[type=submit] {
+  font-size: 15px;
 }
 
 @media all 
@@ -52,3 +90,5 @@ label {
       background-color: orange;
     }
 }
+
+
