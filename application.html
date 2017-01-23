@@ -86,7 +86,8 @@
       </div>   
       <div class="row">
         <div class="col-lg-offset-1 col-lg-8">
-        <form id="application" action="https://formspree.io/umgauper@gmail.com" method="POST">
+        <form id="application" action="https://formspree.io/mareepg@gmail.com" method="POST">
+            <input type="hidden" name="_cc" value="umgauper@email.com" />
             <h3>Applicant Information</h3>
             <div class="name">
               <div>
@@ -109,16 +110,16 @@
             <h4>Division</h4>
             <div id="division">
               <div>
-                <input type="radio" name="Division" value="Piano" required/>
-                <label>Piano</label>
+                <input type="radio" name="Division" value="Piano" id="piano" required/>
+                <label for="piano">Piano</label>
               </div>
               <div>
-                <input type="radio" name="Division" value="Voice" required/>
-                <label>Voice</label>
+                <input type="radio" name="Division" value="Voice" id="voice" required/>
+                <label for="voice">Voice</label>
               </div>
               <div>
                 <input id="instrumental" type="radio" name="Division" value="Instrumental" required/>
-                <label>Instrumental</label>
+                <label for="instrumental">Instrumental</label>
               </div>
             </div>
             <h3>Categories</h3>
@@ -161,20 +162,20 @@
             <h4>Grade</h4>
             <div id="grade">
               <div>
-                <input type="radio" name="Grade" value="1st-3rd" required/>
-                <label>1st-3rd</label>
+                <input type="radio" name="Grade" value="1st-3rd" id="1st-3rd" required/>
+                <label for="1st-3rd">1st-3rd</label>
               </div>
               <div>
-                <input type="radio" name="Grade" value="4th-6th" required/>
-                <label>4th-6th</label>
+                <input type="radio" name="Grade" value="4th-6th" id="4th-6th" required/>
+                <label for="4th-6th">4th-6th</label>
               </div>
               <div>
-                <input type="radio" name="Grade" value="7th-9th" required/>
-                <label>7th-9th</label>
+                <input type="radio" name="Grade" value="7th-9th" id="7th-9th" required/>
+                <label for="7th-9th">7th-9th</label>
               </div>
               <div>
-                <input type="radio" name="Grade" value="10th-12th" />
-                <label>10th-12th</label>
+                <input type="radio" name="Grade" value="10th-12th" id="10th-12th"/>
+                <label for="10th-12th">10th-12th</label>
               </div>
             </div>
             <h4>Repertoire</h4>
