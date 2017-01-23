@@ -41,7 +41,9 @@
       </div>
     </div>
   <!--  End Navbar -->
-    <div class="main" id="rules" class="container">
+    <div class="main" class="container">
+      <div class="row" id="banner">
+      </div>
       <div class="row">
         <div class="col-lg-offset-1 col-lg-10">
         <h2>Competition Rules</h2>
@@ -61,7 +63,7 @@
                     <th>Category</th>
                     <th>Grade</th>
                     <th>Number of Pieces</th>
-                    <th>Time</th>
+                    <th>Performance Time</th>
                   </tr>
                 </thead>
                 <tr>
@@ -122,7 +124,7 @@
         <h4>Winners Concert:  St Andrew Presbyterian Church, Yuba City, 6 pm</h4>
           <ol>
             <li>Awards and cash scholarships will be given at the Concert.</li>
-            <li>Winners, teachers, and parents are strongly encouraged to come to meet the Kiwanis
+            <li>Winners, teachers, and parents are strongly encouraged to come to meet the Kiwanis</li>
                 of Yuba City Noon Club at the  Winners Concert.</li>
             <li>Music scholarships, trophies, and the certificates of finalists will be presented by the President of the Kiwanis                        Club at the Winners’ Concert.</li>
           </ol> 

@@ -19,7 +19,7 @@ $(document).on('ready', function() {
         var $repertoireDiv = '<div class="repertoire-item">' +
                              '<div><label>Title</label><input type="text" name="Title' + i + '" /></div>' +
                              '<div><label>Composer</label><input type="text" name="Composer' + i + '" /></div>' +
-                             '<div><label>Performance Time (in minutes)</label><input type="number" min=1 name="Performance Time' + i + '" /></div>' +
+                             '<div><label>Time (in minutes)</label><input type="number" min=1 name="Performance Time' + i + '" /></div>' +
                              '</div>';
 
        $('div#repertoire').append($repertoireDiv)

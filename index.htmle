@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tri-Counties Music</title>
+    <title>Tri-Counties Music Competition</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" media="screen">   
@@ -16,7 +16,7 @@
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand">Tri-Counties Music</a>
+          <a href="#" class="navbar-brand">Tri-Counties Music Competition</a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -28,7 +28,7 @@
             <li>
               <a href="./application.html">Application</a>
             </li>
-            <li>
+                        <li>
               <a href="./rules.html">Rules</a>
             </li>
             <li>
@@ -43,20 +43,18 @@
   <!--  End Navbar -->
     <div class="main" class="container">
       <div class="row" id="banner">
-        <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
-           <div id="announcement">
-             <h1><b>Tri-Counties Music Competition</b></h1>
-             <h2>Saturday, March 25th, 2017</h2>
-             <h2>St Andrew Presbyterian Church</h2> 
-             <h2>1390 Franklin Road<h2>
-             <h2>Yuba City 95993</h2>
-           </div>
-        </div>
-      </div><!--end row-->
+      </div>
       <div class="row">
         <div class="col-lg-offset-1 col-lg-5 col-md-12">
+         <h1><b>Tri-Counties Music</b></h1>
+         <h2>Annual Competition 2017</h2>
+         <i><h2>Saturday, March 25th, 2017</h2>
+         <h2>St Andrew Presbyterian Church,</h2> 
+         <h2>1390 Franklin Road,<h2>
+         <h2>Yuba City 95993</h2></i>
         </div><!--end col-->
         <div class="col-lg-5 col-md-12">
+         <img src="./images/violin.jpg"/>
         </div>
       </div><!--end row-->
       <div class="row">
@@ -76,6 +74,7 @@ Kiwanis members are proud of this competition and its continuing support of the 
          <p>Chairperson</p>
          <p>Tri-Counties Music</p>
          </div><!--end col-->
+         <hr></hr>
         </div><!--end col-->
       </div><!--end row-->
     </div><!--end main-->
