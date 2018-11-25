@@ -5,10 +5,9 @@ $(document).on('ready', function() {
     $('div#repertoire').empty();
 
     var numPiecesObject = {
-             '1st-3rd': 1,
-             '4th-6th': 2,
-             '7th-9th': 2,
-             '10th-12th': 3 
+             '1st-5th': 1,
+             '6th-8th': 2,
+             '9th-12th': 3
     };
 
     var grade = event.target.value;
@@ -22,7 +21,7 @@ $(document).on('ready', function() {
                              '<div><label>Time (in minutes)</label><input type="number" min=1 name="Performance Time' + i + '" /></div>' +
                              '</div>';
 
-       $('div#repertoire').append($repertoireDiv)
+       $('div#repertoire').append($repertoireDiv);
 
        if (i === 1) {
          $('.repertoire-item input').prop('required', true);
@@ -33,14 +32,10 @@ $(document).on('ready', function() {
 
   /* Change the payment page user is directed to based on the student grade selection. */
     var mainUrl = 'https://tricountiesmusic.github.io/';
-    var endUrlObject = {
-            '1st-3rd': 'pay30.html',
-            '4th-6th': 'pay30.html',
-            '7th-9th': 'pay35.html',
-            '10th-12th': 'pay35.html'
-    }; 
+    var endUrlObject = 'pay35.html';
 
-    var paymentUrl = mainUrl + endUrlObject[grade];
+    var paymentUrl = mainUrl + endUrlObject;
+
     if ( $('#redirect') ) {
       $('#redirect').remove();
     } 
