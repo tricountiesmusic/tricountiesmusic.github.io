@@ -31,17 +31,6 @@ $(document).on('ready', function() {
     }
 
   /* Change the payment page user is directed to based on the student grade selection. */
-    var mainUrl = 'https://tricountiesmusic.github.io/';
-    var endUrlObject = 'pay35.html';
-
-    var paymentUrl = mainUrl + endUrlObject;
-
-    if ( $('#redirect') ) {
-      $('#redirect').remove();
-    } 
-
-    var $redirectInput = '<input id="redirect" type="hidden" name="_next" value="' + paymentUrl + '"/>';
-    $('#application').append($redirectInput);
   });
 
   /* Add text field for entering instrument name if the division selected is "Instrumental". */
